@@ -1,5 +1,10 @@
-// StringCalculator.js
+//string_calculator.js
 function electronsAroundCores(dice) {
-  return 6; //Nur für diesen einen Testfall gültig
-
+  let sum = 0;
+  for (let i = 0; i < dice.length; i++) {
+    if (dice[i] % 2 === 1) { // ungerade
+      sum += dice[i] - 1;
+    }
+  }
+  return sum;
 }
